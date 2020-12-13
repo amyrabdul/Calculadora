@@ -107,7 +107,7 @@ namespace Calculadora
             double soma1, soma2, somafinal;
 
             Console.Clear();
-
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.Write("Qual é o 1ºValor: ");
             soma1 = double.Parse(Console.ReadLine());
 
@@ -117,6 +117,7 @@ namespace Calculadora
 
             somafinal = soma1 + soma2;
             Console.WriteLine($"A soma de {soma1} + {soma2} = {somafinal}");
+            Console.ResetColor () ;
             Console.WriteLine();
         }
 
@@ -125,7 +126,7 @@ namespace Calculadora
             double sub1, sub2, subfinal;
 
             Console.Clear();
-
+            Console.ForegroundColor = ConsoleColor.Magenta;
             Console.Write("Qual é o 1ºValor: ");
             sub1 = double.Parse(Console.ReadLine());
 
@@ -135,6 +136,7 @@ namespace Calculadora
 
             subfinal = sub1 - sub2;
             Console.WriteLine($"A subtração de {sub1} - {sub2} = {subfinal}");
+            Console.ResetColor () ;
             Console.WriteLine();
         }
 
@@ -143,7 +145,7 @@ namespace Calculadora
             double multi1, multi2, multifinal;
 
             Console.Clear();
-
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("Qual é o 1°valor : ");
             multi1 = double.Parse(Console.ReadLine());
 
@@ -153,6 +155,7 @@ namespace Calculadora
 
             multifinal = multi1 * multi2;
             Console.WriteLine($"A multiplicaçao de {multi1} * {multi2} = {multifinal}");
+            Console.ResetColor () ;
             Console.WriteLine();
         }
 
@@ -161,7 +164,7 @@ namespace Calculadora
             double divi1, divi2, divifinal;
 
             Console.Clear();
-
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("Qual é o seu dividendo: ");
             divi1 = double.Parse(Console.ReadLine());
 
@@ -177,6 +180,7 @@ namespace Calculadora
             divifinal = divi1 / divi2;
 
             Console.WriteLine($"A divisão de {divi1} / {divi2} = {divifinal}");
+            Console.ResetColor () ;
             Console.WriteLine();
         }
 
@@ -185,7 +189,7 @@ namespace Calculadora
             double p1, v1, p2, pfinal;
 
             Console.Clear();
-
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Qual a  Porcentagem desejada: ");
             p1 = double.Parse(Console.ReadLine());
 
@@ -199,6 +203,7 @@ namespace Calculadora
             pfinal = p2  * v1;
 
             Console.WriteLine($"O resultado de {p1} % de {v1} é = {pfinal}%");
+            Console.ResetColor () ;
             Console.WriteLine();
         }
 
@@ -207,13 +212,16 @@ namespace Calculadora
             double raizQ, resposta;
 
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
 
             Console.Write("A Raiz Quadrada de : ");
             raizQ = double.Parse(Console.ReadLine());
             Console.WriteLine();
 
             resposta = Math.Sqrt(raizQ);
+            Console.ResetColor () ;
             Console.WriteLine($"A raiz de  {raizQ} é = {Math.Round(resposta, 2)}");
+            Console.WriteLine();
         }
        
         static void Potencia()
@@ -225,7 +233,7 @@ namespace Calculadora
             
             Console.Clear();
 
-           
+            Console.ForegroundColor = ConsoleColor.Blue;
             
             Console.Write("Digite a base: ");
             
@@ -246,7 +254,7 @@ namespace Calculadora
    
             
             Console.WriteLine($"A potencia de {n1} ^ {n2} é = {resultado}");
-   
+            Console.ResetColor () ;
             Console.WriteLine();
       
         }                                                                                       
