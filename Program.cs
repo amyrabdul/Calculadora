@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Figgle;
 namespace Calculadora
 {
     class Program
@@ -100,7 +100,8 @@ namespace Calculadora
                 Console.ReadKey();
             }
             Console.Clear();
-            Console.WriteLine("Obrigado por ser minha cobaia ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine(FiggleFonts.Big.Render("Obrigado por ser minha cobaia "));
         }
         static void Soma()
         {
