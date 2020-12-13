@@ -102,6 +102,7 @@ namespace Calculadora
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(FiggleFonts.Big.Render("Obrigado por ser minha cobaia "));
+            
         }
         static void Soma()
         {
