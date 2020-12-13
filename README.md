@@ -32,7 +32,7 @@ Vejo voçês em Pc2
 ```
 ## _ScreenShot_
 
-![Tela inicial](Print.Png)
+![Tela inicial](Print.PNG)
 
 ## _Download_
 Baixe o arquivo abaixo
